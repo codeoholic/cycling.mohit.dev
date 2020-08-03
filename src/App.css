@@ -48,3 +48,13 @@
     font-weight: 700;
     font-size: 24px;
 }
+.font_14{
+    font-size: 14px;
+}
+.color_222226{
+    color: #222226;
+}
+.stack_bottom{
+    position: absolute;
+    bottom: 20px;
+}

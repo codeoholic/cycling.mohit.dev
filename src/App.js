@@ -21,6 +21,9 @@ class App extends Component {
                     <img src="https://mohit.sgp1.cdn.digitaloceanspaces.com/cycling/cycling.png" className="cycling_icon" alt="cycling icon"/>
                     <div className="statistics">{this.state.total_rides} rides</div>
                     <div className="statistics">{this.state.total_distance / 1000} kilometers</div>
+                    <div className="stack_bottom">
+                        <div className="font_14 color_222226">Bitcoin Segwit: 366jcHNFy12St9aQx4sguWNTidFQTRdQxC</div>
+                    </div>
                 </header>
             </div>
         );
