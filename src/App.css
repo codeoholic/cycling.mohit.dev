@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #dedede;
+  background-color: #F3F1ED;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,13 +48,39 @@
     font-weight: 700;
     font-size: 24px;
 }
+.font_16{
+    font-size: 16px;
+}
 .font_14{
     font-size: 14px;
+}
+.font_12{
+    font-size: 12px;
 }
 .color_222226{
     color: #222226;
 }
 .stack_bottom{
-    position: absolute;
-    bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.flex{
+    display: flex;
+}
+.flex_item{
+    padding: 10px 20px;
+    /*width: 40px;*/
+}
+.serial{
+    width: 20px;
+}
+.margin_top_20{
+    margin-top: 20px;
+}
+.margin_top_10{
+    margin-top: 10px;
+}
+a{
+    color: #222226;
+    font-size: 14px;
 }
