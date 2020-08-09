@@ -6,7 +6,6 @@ Technology
 Links
 ---
 - [Web](https://cycling.mohit.dev)
-- [Github](https://github.com/codeoholic/cycling.mohit.dev)
 
 Mechanism
 ---

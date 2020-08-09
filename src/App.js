@@ -56,8 +56,11 @@ class App extends Component {
                             <img src="https://mohit.sgp1.digitaloceanspaces.com/cdn/bmc-button.png" className="margin_top_10" alt="buy me a pizza!"/>
                         </a>
                         <div className="margin_top_10">
-                            <a href="https://twitter.com/codeoholic" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/codeoholic" target="_blank" rel="noopener noreferrer" className="margin_right_20">
                                 twitter
+                            </a>
+                            <a href="https://github.com/codeoholic/cycling.mohit.dev" target="_blank" rel="noopener noreferrer">
+                                github
                             </a>
                         </div>
                     </div>
