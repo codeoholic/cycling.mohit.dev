@@ -19,11 +19,13 @@ class App extends Component {
             var data = [];
             let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             this.state.rides.map(function(value,index){
+                var hours = Math.floor(value.moving_time / (60 * 60));
+                var minutes = parseFloat((value.moving_time - (hours * (60 * 60))) / 60).toFixed(0);
                 data.push(
                     <div className="flex" key={index}>
                         <div className="font_12 color_222226 flex_item serial">{index + 1}.</div>
                         <div className="font_12 color_222226 flex_item">{parseFloat(value.distance / 1000).toFixed(2)}km</div>
-                        <div className="font_12 color_222226 flex_item">{parseFloat(value.moving_time / (60 * 60)).toFixed(2)}hrs</div>
+                        <div className="font_12 color_222226 flex_item">{hours}hr {minutes}m</div>
                         <div className="font_12 color_222226 flex_item">{(new Date(value.start_date_local)).toLocaleString('en-GB',options)}</div>
                     </div>
                 )
