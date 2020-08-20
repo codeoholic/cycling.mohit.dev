@@ -42,6 +42,7 @@ class App extends Component {
             return(
                 <div className="margin_top_10">
                     <div className="statistics">{distance} kilometers</div>
+                    <div className="statistics">{parseFloat((distance)/30).toFixed(2)} kilometers/ride</div>
                     <div className="statistics">{hours}h {minutes}m</div>
                     <table className="margin_top_20">
                         <thead>
@@ -67,7 +68,8 @@ class App extends Component {
                     <img src="https://mohit.sgp1.cdn.digitaloceanspaces.com/cycling/cycling.png" className="cycling_icon" alt="cycling icon"/>
                     <div className="heading margin_top_20">Overall</div>
                     <div className="statistics margin_top_10">{this.state.total_rides} rides</div>
-                    <div className="statistics">{this.state.total_distance / 1000} kilometers</div>
+                    <div className="statistics">{parseFloat(this.state.total_distance / 1000).toFixed(2)} kilometers</div>
+                    <div className="statistics">{parseFloat((this.state.total_distance / 1000)/this.state.total_rides).toFixed(2)} kilometers/ride</div>
                     <div className="heading margin_top_20">Past 30 rides</div>
                     {this.render_rides()}
                     <div className="stack_bottom">
