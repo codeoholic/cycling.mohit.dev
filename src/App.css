@@ -23,6 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px
 }
 
 .App-link {
@@ -43,10 +44,15 @@
     height: 120px;
 }
 
-.statistics{
+.heading{
     color: #222226;
     font-weight: 700;
     font-size: 24px;
+}
+.statistics{
+    color: #222226;
+    font-size: 20px;
+    font-weight: 400;
 }
 .font_16{
     font-size: 16px;
@@ -86,4 +92,20 @@ a{
 }
 .margin_right_20{
     margin-right: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    color: #222226;
+    font-size: 12px;
+    border: 1px solid rgba(34,34,38,0.1);
+    border-collapse: collapse;
+    padding: 10px;
+}
+.weight_700{
+    font-weight: 700;
+}
+thead{
+    font-weight: 700;
 }
